@@ -1,0 +1,99 @@
+/* Root Layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Root wrapper for layout */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container should grow only as needed */
+.container {
+  flex: 1;
+}
+
+/* Calculator Card */
+.card {
+  margin-bottom: 1rem;
+  padding: 1rem !important;
+  border-radius: 1rem;
+  height: 420px !important;
+}
+
+/* Input field styling */
+input.form-control {
+  font-size: 1.4rem;
+  height: 48px;
+  border-radius: 0.5rem;
+}
+
+/* Button styling */
+button.btn {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Keep last row tight */
+.card .row.g-2:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Active key visual feedback */
+button.active {
+  background-color: #0d6efd !important;
+  color: white !important;
+  transform: scale(0.97);
+  transition: all 0.1s ease-in-out;
+}
+
+/* History item hover */
+.history-item:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Footer Styling */
+footer.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
+  line-height: 2;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 500px;
+  width: 100%;
+  margin: 1% auto;
+}
+
+/* Contact link */
+.contact-link {
+  font-size: 0.85rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #0d6efd;
+}
+
+/* Dark theme override */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
