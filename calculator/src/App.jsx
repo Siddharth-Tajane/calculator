@@ -202,7 +202,7 @@ function App() {
       <footer className="footer py-2 bg-light text-center border-top">
         <div className="container d-flex flex-column align-items-center">
           <div className="footer-content text-muted small text-center mb-1">
-           <b> &copy; 2025 Phone Contact App. All rights reserved by Siddharth.</b>
+           <b> &copy; 2025 Calculator. All rights reserved by Siddharth.</b>
           </div>
           <a
             href="tel:+7219676792"
